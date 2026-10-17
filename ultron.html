@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto ULTRON — A IA das Ruas Híbridas</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #0b1020; color: #fff; overflow: hidden; }
+.slide { display: none; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+  min-height: 100vh; padding: 40px 24px 120px; position: relative; }
+.slide.active { display: flex; }
+h1 { font-size: 2.6em; font-weight: 900; letter-spacing: -1px; }
+h2 { font-size: 2em; font-weight: 900; margin-bottom: 24px; }
+p, li { font-size: 1.25em; line-height: 1.6; }
+.big { font-size: 1.5em; }
+.emoji { font-size: 4.5em; margin-bottom: 20px; }
+.card { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: 24px;
+  padding: 28px; margin: 12px; max-width: 640px; width: 100%; text-align: left; }
+.card center { text-align: center; }
+.hl { color: #7cd4ff; font-weight: 800; }
+.good { color: #7dffa8; font-weight: 800; }
+.bad { color: #ff8d8d; font-weight: 800; }
+.amber { color: #ffd166; font-weight: 800; }
+.flow { display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 640px; }
+.step { display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,.07); border-radius: 18px; padding: 18px 20px; text-align: left; }
+.step .n { min-width: 44px; height: 44px; border-radius: 50%; background: #7cd4ff; color: #0b1020; font-weight: 900; font-size: 1.3em; display: flex; align-items: center; justify-content: center; }
+.galpao { background: linear-gradient(135deg, #16204a 0%, #0b1020 60%); }
+.brand { position: absolute; top: 22px; left: 0; right: 0; text-align: center; font-size: .85em; letter-spacing: 3px; color: rgba(255,255,255,.35); font-weight: 700; }
+#nav { position: fixed; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 16px; background: rgba(0,0,0,.35); backdrop-filter: blur(8px); }
+#nav button { background: #7cd4ff; color: #0b1020; border: none; border-radius: 14px; font-size: 1.1em; font-weight: 900; padding: 12px 22px; cursor: pointer; }
+#dots { display: flex; gap: 8px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.25); }
+.dot.on { background: #7cd4ff; }
+#num { color: rgba(255,255,255,.5); font-size: .9em; font-weight: 700; }
+table { border-collapse: collapse; margin: 10px auto; font-size: 1.15em; }
+td, th { border: 1px solid rgba(255,255,255,.2); padding: 12px 18px; }
+th { background: rgba(255,255,255,.1); }
+</style>
+</head>
+<body>
+
+<div class="slide galpao active">
+  <div class="brand">GALPÃO LOGÍSTICO • PROJETO DE INOVAÇÃO</div>
+  <div class="emoji">🤖</div>
+  <h1>ULTRON</h1>
+  <p class="big hl">A inteligência artificial das ruas híbridas</p>
+  <p style="margin-top:18px; color:rgba(255,255,255,.7)">Um projeto de <b>Guilherme Dias</b> com assistência de IA<br/>feito por quem entende do galpão, para o galpão</p>
+</div>
+
+<div class="slide">
+  <h2>🤔 O problema de hoje</h2>
+  <div class="flow">
+    <div class="step"><span class="n">1</span><p>Uma rua enche de paletes. O Ops precisa de uma <span class="hl">rua híbrida</span> pra continuar o trabalho.</p></div>
+    <div class="step"><span class="n">2</span><p>Ele manda mensagem pros analistas do <span class="hl">CTW</span> e... <span class="bad">espera</span>.</p></div>
+    <div class="step"><span class="n">3</span><p>A resposta demora <span class="bad">meia hora</span> em média. Enquanto isso, o galpão não para: paletes acumulam e gente fica parada.</p></div>
+  </div>
+</div>
+
+<div class="slide">
+  <h2>⏱️ Quanto vale meia hora?</h2>
+  <div class="card center">
+    <p class="big">Cada pedido de rua híbrida hoje:</p>
+    <p class="big bad" style="font-size:2.4em">~30 minutos</p>
+    <p>de operador esperando, em cada chamado</p>
+  </div>
+  <div class="card center">
+    <p class="big">Com o Ultron:</p>
+    <p class="big good" style="font-size:2.4em">segundos ⚡</p>
+    <p>ele responde na hora, sem ninguém sair do trabalho pra digitar mensagem</p>
+  </div>
+</div>
+
+<div class="slide">
+  <h2>🤖 O que é o Ultron?</h2>
+  <div class="card center">
+    <div class="emoji">🧠</div>
+    <p class="big">É um <span class="hl">ajudante virtual</span> que cuida das ruas híbridas <b>sozinho</b>.</p>
+  </div>
+  <div class="flow" style="margin-top:10px">
+    <div class="step"><p>💬 Conversa pelo <span class="hl">WhatsApp</span>, como um colega</p></div>
+    <div class="step"><p>👀 <span class="hl">Lê o sistema</span> do galpão pra ver quais ruas estão cheias ou vazias</p></div>
+    <div class="step"><p>🖐️ <span class="hl">Abre as ruas híbridas</span> quando realmente precisa</p></div>
+  </div>
+</div>
+
+<div class="slide">
+  <h2>🧠 Como ele pensa</h2>
+  <p class="big" style="margin-bottom:20px">Simples como uma receita de bolo:</p>
+  <div class="flow">
+    <div class="step"><span class="n">1</span><p>Ops pede: <i>"Ultron, preciso de hibrida pro SSP55!"</i></p></div>
+    <div class="step"><span class="n">2</span><p>Ultron olha a rua no sistema: <span class="hl">cabe 20, tem 18?</span> → <span class="bad">"Ainda tem espaço! Use os 2 lugares que sobraram."</span></p></div>
+    <div class="step"><span class="n">3</span><p>Rua <span class="hl">100% cheia</span>? → Ultron acha uma <span class="good">rua vazia</span> e abre a hibrida na hora.</p></div>
+  </div>
+  <p style="margin-top:18px; color:rgba(255,255,255,.7)">Sem achismo: a decisão é pelo número que está no sistema. Sempre.</p>
+</div>
+
+<div class="slide">
+  <h2>🎁 O que a empresa ganha</h2>
+  <div class="flow">
+    <div class="step"><span class="n">⚡</span><p><b>Velocidade:</b> 30 minutos viram segundos. O galpão não fica esperando resposta.</p></div>
+    <div class="step"><span class="n">👷</span><p><b>CTW livre:</b> os analistas param de apertar botão de rua híbrida e fazem o trabalho que só eles fazem.</p></div>
+    <div class="step"><span class="n">📦</span><p><b>Espaço aproveitado:</b> nenhuma rua nova é aberta se ainda sobra lugar na original.</p></div>
+    <div class="step"><span class="n">✅</span><p><b>Padrão:</b> todo mundo recebe a mesma resposta certa, 24h por dia, sem esquecimento.</p></div>
+    <div class="step"><span class="n">📋</span><p><b>Histórico:</b> fica registrado cada hibrida aberta, quem pediu e quando.</p></div>
+  </div>
+</div>
+
+<div class="slide">
+  <h2>🔄 Como funciona por dentro</h2>
+  <div class="flow">
+    <div class="step"><span class="n">1</span><p>💬 O colaborador pede a rua híbrida <span class="hl">no WhatsApp</span></p></div>
+    <div class="step"><span class="n">2</span><p>👀 O Ultron consulta as ruas <span class="hl">no sistema do galpão</span> (WMS)</p></div>
+    <div class="step"><span class="n">3</span><p>🧠 Ele decide: tem espaço → avisa. Cheio → <span class="good">abre a hibrida</span></p></div>
+    <div class="step"><span class="n">4</span><p>🔔 Ele responde o colaborador e avisa a liderança, tudo <span class="good">automático</span></p></div>
+  </div>
+  <p style="margin-top:18px; color:rgba(255,255,255,.7)">Tudo na palma da mão, no celular que todo mundo já usa.</p>
+</div>
+
+<div class="slide">
+  <h2>🗺️ Onde o projeto está</h2>
+  <div class="flow">
+    <div class="step"><p>✅ <b>Pronto:</b> as regras de decisão (o "cérebro") definidas com quem opera o galpão</p></div>
+    <div class="step"><p>🔧 <b>Agora:</b> ligar o Ultron ao WMS (olhos e mãos)</p></div>
+    <div class="step"><p>🚀 <b>Depois:</b> piloto com as áreas que mais pedem hibrida, e aí pra todo o galpão</p></div>
+  </div>
+  <p style="margin-top:22px" class="big">Nada de investimento caro: é <span class="good">tecnologia que já existe</span>, apontada pro nosso problema.</p>
+</div>
+
+<div class="slide galpao">
+  <div class="emoji">🤖</div>
+  <h1>ULTRON</h1>
+  <p class="big">Menos espera. Mais galpão.</p>
+  <p style="margin-top:26px; color:rgba(255,255,255,.7)">Projeto de inovação interna • Guilherme Dias<br/>#MenosMensagemMaisOperação</p>
+</div>
+
+<div id="nav">
+  <button onclick="go(-1)">◀</button>
+  <div id="dots"></div>
+  <span id="num">1/9</span>
+  <button onclick="go(1)">▶</button>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let cur = 0;
+const dots = document.getElementById('dots');
+slides.forEach((_, i) => { const d = document.createElement('div'); d.className = 'dot' + (i === 0 ? ' on' : ''); d.onclick = () => show(i); dots.appendChild(d); });
+function show(i) { cur = Math.max(0, Math.min(slides.length - 1, i)); slides.forEach((s, k) => s.classList.toggle('active', k === cur));
+  [...dots.children].forEach((d, k) => d.classList.toggle('on', k === cur));
+  document.getElementById('num').textContent = (cur + 1) + '/' + slides.length; }
+function go(d) { show(cur + d); }
+document.addEventListener('keydown', e => { if (e.key === 'ArrowRight' || e.key === ' ') go(1); if (e.key === 'ArrowLeft') go(-1); });
+let tx = null;
+document.addEventListener('touchstart', e => tx = e.touches[0].clientX);
+document.addEventListener('touchend', e => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 60) go(dx < 0 ? 1 : -1); tx = null; });
+</script>
+</body>
+</html>
